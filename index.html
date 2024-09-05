@@ -15,16 +15,17 @@
         }
 
         .resume-container {
-            width: 210mm;
-            min-height: 297mm;
+            width: 95%;
+            max-width: 800px;
             background-color: #fff;
-            padding: 20mm;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
         }
 
         .section-title {
             font-weight: bold;
-            font-size: 11.5pt;
+            font-size: 1.2em;
             border-bottom: 2px solid #000;
             margin-bottom: 10px;
         }
@@ -34,7 +35,7 @@
         }
 
         .resume-header .name {
-            font-size: 25pt;
+            font-size: 2em;
             font-weight: bold;
             margin-bottom: 5px;
         }
@@ -58,6 +59,7 @@
         .contact-info a {
             text-decoration: none;
             color: #000;
+            word-break: break-word;
         }
 
         .section {
@@ -65,7 +67,7 @@
         }
 
         .section-content {
-            font-size: 10.5pt;
+            font-size: 1em;
             line-height: 1.7;
         }
 
@@ -86,6 +88,29 @@
             background-color: #000;
             border-radius: 50%;
             margin-right: 8px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .resume-container {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 1em;
+            }
+
+            .resume-header .name {
+                font-size: 1.5em;
+            }
+
+            .section-content {
+                font-size: 0.9em;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
         }
     </style>
 </head>
